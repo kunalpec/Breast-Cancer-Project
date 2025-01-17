@@ -28,7 +28,7 @@ def add_pred_value(input_data):
 
 # Clean data
 def get_clean_data():
-    data = pd.read_csv(r'data\data.csv')
+    data = pd.read_csv('data/data.csv')
     data.drop(["Unnamed: 32", "id"], axis=1, inplace=True, errors='ignore')
     data["diagnosis"] = data["diagnosis"].map({"M": 1, "B": 0})
     data = data.dropna()  # Drop NaN values
