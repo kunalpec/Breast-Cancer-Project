@@ -1,8 +1,0 @@
-streamlit
-pickle
-pandas
-numpy
-scikit-learn
-plotly
-joblib
-plotly.graph_objects
