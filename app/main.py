@@ -6,8 +6,8 @@ import numpy as np
 
 # prediction'
 def add_pred_value(input_data):
-    model=pickle.load(open('Breast_cancer.py/model.pkl','rb'))
-    scaler=pickle.load(open('Breast_cancer.py/scaler.pkl','rb'))
+    model=pickle.load(open('Breast_cancer/model.pkl','rb'))
+    scaler=pickle.load(open('Breast_cancer/scaler.pkl','rb'))
 
     # convert input_data in array
     input_array=np.array(list(input_data.values())).reshape(1,-1)
