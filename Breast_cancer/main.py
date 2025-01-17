@@ -7,7 +7,7 @@ import pickle
 
 # Clean data
 def get_clean_data():
-    data=pd.read_csv(r"C:\Users\Kunal\OneDrive\Desktop\data.csv")
+    data=pd.read_csv(r'data\data.csv')
     data.drop(["Unnamed: 32", "id"],axis=1, inplace=True,errors='ignore')
     data["diagnosis"]=data["diagnosis"].map({"M":1,"B":0})
     print(data.head(5))
